@@ -1,0 +1,14 @@
+Class Usuario{}
+Class foco{
+    -EstadoFoco : Estado
+    +Encender()
+    +Apagar()
+}
+
+Enum EstadoFoco{
+    Encendido
+    Apagado
+}
+
+Foco *-- EstadoFoco
+Foco -- usuario
