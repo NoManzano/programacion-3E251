@@ -22,4 +22,4 @@ Salsa: ChileAncho Sal Pimienta
 
 Carne : 
 
-make pozole
+make pozole1

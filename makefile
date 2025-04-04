@@ -6,11 +6,11 @@ INCLUDE := include
 BIN := bin
 EXE := $(BIN)/$(PROYECTO)
 
-$(EXE) : $(SRC)/main.cpp
+$(EXE) : $(SRC)/memoria.cpp
 	c++ $< -o $@ $(LIB) $(CXX) -I$(INCLUDE)
-
-run : $(EXE)
-	./$<
 
 clean : 
 	rm $(BIN)/*
+
+run : $(EXE)
+	./$<
