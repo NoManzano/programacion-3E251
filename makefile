@@ -14,9 +14,15 @@ clean :
 
 run : $(EXE)
 	./$<
-
+#Practica de archivo
 archivo: bin/archivo
 	./$<
 
 bin/archivo: src/archivo.cpp
+	c++ $< -o $@ -I$(INCLUDE)
+#Practica de binario
+binario: bin/binario
+	./$<
+
+bin/binario: src/binario.cpp
 	c++ $< -o $@ -I$(INCLUDE)
